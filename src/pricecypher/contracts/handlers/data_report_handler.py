@@ -29,7 +29,7 @@ class DataReportHandler(BaseHandler):
         `path_metadata_out` location. For consistency the (unaltered) input DataFrame is stored at `path_out` as well.
 
         :param user_input: requires `path_in`, `path_out` and `path_metadata_out`.
-        :return: the remote storage path.
+        :return: the remote storage path of the DataFrame.
         """
         input_df = self._file_storage.read_df(user_input.get('path_in'))
         self._file_storage.write_metadata(user_input.get('path_metadata_out'), self.process(input_df))
