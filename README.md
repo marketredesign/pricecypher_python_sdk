@@ -41,9 +41,9 @@ print(config.get_parsed_section('nonexistent'))
 
 ### Contracts
 The `Script`, `ScopeScript`, and `QualityTestScript` abstract classes can be extended with their abstract methods
-implemented to create scripts usable in other services. 
+implemented to create scripts usable in other services.
 
-The `ScopeScript` in particular is intended for scripts that calculate values of certain scopes for transactions. 
+The `ScopeScript` in particular is intended for scripts that calculate values of certain scopes for transactions.
 
 The `QualityTestScript` is intended for scripts that check the quality of a data intake and produce a standardized
 output that can be visualized and/or used by other services.
@@ -61,10 +61,12 @@ See the documentation on the abstract functions for further specifics.
 
 ## Development
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+These instructions will get you a copy of the project up and running on your local machine for development and testing
+purposes.
 
 ### Prerequisites
-* Python >= 3.9
+
+* Python >= 3.10
 
 ### Setup
 The `endpoints` module models the different PriceCypher API endpoints. Each file represents a different API and the
